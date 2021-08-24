@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: atm-machine-simulator
+  datasource:
+    url: jdbc:mysql://mysql-atm-db:3306/atm-machine-simulator-db
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: rootpassword
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: 'create-drop'
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui
