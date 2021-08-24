@@ -1,0 +1,3 @@
+ create table atm_details (atm_id varchar(255) not null, total_amount double, primary key (atm_id));
+ create table atm_entity_currency_denominations_in_atm (atm_entity_atm_id varchar(255) not null, currency_denominations blob, denominations_id integer not null, primary key (atm_entity_atm_id, denominations_id));
+ create table bank_account_details (account_number varchar(255) not null, account_pin varchar(255), account_balance double, overdraft_balance double, primary key (account_number));
